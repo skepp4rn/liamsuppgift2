@@ -1,0 +1,123 @@
+.btn-yellow {
+    background-color: #ffbb00;
+    color: #ffffff;
+    border-radius: 0.7rem;
+    padding-left: 1.75rem;
+    padding-right: 1.75rem;
+  }
+  
+  .btn-yellow:hover {
+    background-color: #ffc935;
+  }
+  
+  @keyframes spin {
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+  .header-bg {
+    background-image: url(../images/header-bg.png);
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: 50% 100%;
+    height: 100vh;
+  }
+  
+  .nav-item {
+    margin-left: 1rem;
+    position: relative;
+  }
+  
+  .nav-item a {
+    color: #ffffff !important;
+    font-weight: 500;
+  }
+  
+  .nav-item a:hover {
+    color: #ffbb00 !important;
+  }
+  
+  .nav-item a:hover::after {
+    position: absolute;
+    content: "";
+    background-color: #ffbb00;
+    width: 2rem;
+    height: 0.2rem;
+    left: 0.5rem;
+    top: 32px;
+  }
+  
+  .nav-item button {
+    margin-left: 2rem;
+  }
+  
+  .nav-item .active::after {
+    position: absolute;
+    content: "";
+    background-color: #ffbb00 !important;
+    width: 2rem;
+    height: 0.2rem;
+    left: 0.5rem;
+    top: 32px;
+  }
+  
+  #showcase {
+    margin-top: 2rem;
+    color: #ffffff;
+    text-align: center;
+  }
+  
+  @media (min-width: 992px) {
+    #showcase {
+      text-align: left;
+    }
+  }
+  
+  #showcase h1 {
+    font-size: 57px;
+    font-weight: bold;
+  }
+  
+  #showcase p {
+    font-weight: bold;
+    width: 80%;
+  }
+  
+  #showcase .mobiles {
+    text-align: right;
+  }
+  
+  #showcase .mobiles img {
+    height: auto;
+    width: 100%;
+  }
+  
+  #about-us {
+    padding-top: 3rem;
+    text-align: center;
+  }
+  
+  @media (min-width: 768px) {
+    #about-us {
+      text-align: left;
+    }
+  }
+  
+  #about-us .left-column {
+    flex: 1;
+    position: relative;
+  }
+  
+  #about-us .left-column .mobile-bg {
+    position: absolute;
+    z-index: -1;
+    top: 5%;
+    left: -25%;
+    animation: spin 4s linear infinite;
+  }
+  
+  #about-us .right-column {
+    flex: 1;
+  }
+  
